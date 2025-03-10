@@ -278,3 +278,1607 @@
         .hero-content {
             text-align: center;
             color: var(--text-light);
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .floating-element {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .floating-element:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 10%;
+            animation: float 8s infinite ease-in-out;
+        }
+        
+        .floating-element:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            bottom: 15%;
+            left: 25%;
+            animation: float 10s infinite ease-in-out;
+            animation-delay: -2s;
+        }
+        
+        .floating-element:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 30%;
+            right: 15%;
+            animation: float 7s infinite ease-in-out;
+            animation-delay: -1s;
+        }
+        
+        .floating-element:nth-child(4) {
+            width: 120px;
+            height: 120px;
+            bottom: 25%;
+            right: 20%;
+            animation: float 9s infinite ease-in-out;
+            animation-delay: -3s;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+            }
+            25% {
+                transform: translateY(-15px) translateX(10px);
+            }
+            50% {
+                transform: translateY(0) translateX(20px);
+            }
+            75% {
+                transform: translateY(15px) translateX(10px);
+            }
+        }
+        
+        /* About Section */
+        .about {
+            padding: 120px 0;
+            position: relative;
+            background-color: white;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .about-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-light);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .about-text p {
+            margin-top: 30px;
+            font-size: 1.05rem;
+            color: var(--text-gray);
+            margin-bottom: 25px;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-img-container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .about-img-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-pattern {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background-color: var(--primary-light);
+            opacity: 0.1;
+            right: -30px;
+            bottom: -30px;
+            border-radius: 8px;
+            z-index: 1;
+        }
+        
+        .about-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            background-color: var(--secondary-light);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            flex: 1;
+            text-align: center;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+        
+        /* Difference Section */
+        .difference {
+            padding: 120px 0;
+            background-color: var(--secondary-light);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .difference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .difference-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+        }
+        
+        .difference-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .difference-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .difference-icon i {
+            font-size: 30px;
+            color: white;
+        }
+        
+        .difference-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        
+        .difference-card p {
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 0;
+            transition: var(--transition);
+        }
+        
+        .difference-shape {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-light);
+            opacity: 0.03;
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+            transition: var(--transition);
+        }
+        
+        .difference-card:hover .difference-shape {
+            transform: scale(1.5);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 120px 0;
+            position: relative;
+            background-color: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+        
+        .service-content p {
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+        
+        .service-features li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            color: var(--text-gray);
+        }
+        
+        .service-features li i {
+            color: var(--primary-light);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        /* Process Section */
+        .process {
+            padding: 120px 0;
+            background-color: var(--secondary-light);
+            position: relative;
+        }
+        
+        .process-timeline {
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        .process-timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: rgba(20, 181, 160, 0.2);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 80px;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+        }
+        
+        .timeline-content {
+            width: 45%;
+            position: relative;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .timeline-number {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            z-index: 2;
+            box-shadow: 0 5px 15px rgba(20, 181, 160, 0.3);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-number {
+            left: auto;
+            right: -20px;
+        }
+        
+        .timeline-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+        
+        .timeline-content p {
+            color: var(--text-gray);
+            margin-bottom: 0;
+        }
+        
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        
+        /* Partners Section */
+        .partners {
+            padding: 100px 0;
+            background-color: white;
+            position: relative;
+        }
+        
+        .partners-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+        
+        .partner-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100px;
+            width: 200px;
+        }
+        
+        .partner-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .partner-item img {
+            max-width: 140px;
+            max-height: 60px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+        
+        .partner-item:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            position: relative;
+            background: var(--primary-gradient);
+            color: white;
+        }
+        
+        .contact:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHg9IjAiIHk9IjAiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIgb3BhY2l0eT0iMC41Ii8+PC9zdmc+');
+            opacity: 0.3;
+            z-index: 1;
+        }
+        
+        .contact-content {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+        }
+        
+        .contact-info h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: white;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .contact-info p {
+            margin-top: 25px;
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+        }
+        
+        .contact-details {
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        
+        .contact-icon i {
+            font-size: 1.25rem;
+            color: white;
+        }
+        
+        .contact-item-content h3 {
+            font-size: 1.1rem;
+            color: white;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: var(--primary-dark);
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: var(--secondary-light);
+            border: 2px solid transparent;
+            border-radius: 6px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            background-color: white;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #0f2342;
+            color: white;
+            padding: 80px 0 40px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--primary-light);
+            bottom: -10px;
+            left: 0;
+            border-radius: 1.5px;
+        }
+        
+        .footer-about p {
+            margin-bottom: 25px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-icon:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-5px);
+        }
+        
+        .social-icon i {
+            font-size: 1rem;
+            color: white;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .footer-links ul li a:before {
+            content: '\f105';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--primary-light);
+        }
+        
+        .footer-links ul li a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .footer-newsletter p {
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 4px 0 0 4px;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .newsletter-form input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        
+        .newsletter-form button {
+            padding: 0 20px;
+            background-color: var(--primary-light);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .newsletter-form button:hover {
+            background-color: #108d7c;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-bottom a {
+            color: var(--primary-light);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-bottom a:hover {
+            color: white;
+        }
+        
+        /* Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-light);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(20, 181, 160, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .process-timeline:before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                justify-content: flex-start;
+            }
+            
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 50px);
+                margin-left: 50px;
+            }
+            
+            .timeline-number {
+                left: -5px;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-number {
+                left: -5px;
+                right: auto;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-text {
+                order: 2;
+            }
+            
+            .about-image {
+                order: 1;
+                margin-bottom: 40px;
+            }
+            
+            .contact-content {
+                flex-direction: column;
+            }
+            
+            .contact-info {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            
+            .contact-info h2:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 270px;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                padding: 30px 0;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            nav ul.active {
+                left: 0;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+            
+            nav ul li a {
+                color: var(--text-dark);
+                display: block;
+                padding: 12px 30px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            
+            nav ul li a:after {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .about-stats {
+                flex-direction: column;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.75rem;
+            }
+            
+            .partner-item {
+                width: 150px;
+                height: 80px;
+                padding: 15px;
+            }
+            
+            .partner-item img {
+                max-width: 100px;
+                max-height: 50px;
+            }
+            
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Digital<span>Tandem</span></a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container hero-content">
+            <h1>Turning Digital Complexity Into Your Competitive Advantage</h1>
+            <p>We help enterprises across Europe and Asia transform their business through strategic digital solutions that deliver measurable outcomes.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Schedule a Strategy Session</a>
+                <a href="#case-studies" class="btn btn-outline">View Our Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-title">
+                        <h2>Transforming Enterprises Across Borders</h2>
+                    </div>
+                    <p>Digital Tandem is a premier digital transformation consultancy serving enterprise clients across Europe and Asia. We specialize in launching and scaling operations in emerging markets, implementing enterprise-wide digital solutions, and driving organizational change.</p>
+                    <p>With deep expertise in highly regulated environments, we bridge technical complexity with business strategy to deliver measurable results. Our team has successfully led digital initiatives for Fortune 500 companies across telecommunications, fintech, e-commerce, and logistics sectors.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number counter">12+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number counter">40+</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number counter">100+</div>
+                            <div class="stat-label">Enterprise Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Digital Tandem Team">
+                    </div>
+                    <div class="about-pattern"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Sets Us Apart Section -->
+    <section class="difference">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Sets Us Apart</h2>
+                <p>Our unique approach delivers transformative results that others can't match</p>
+            </div>
+            <div class="difference-grid">
+                <div class="difference-card">
+                    <div class="difference-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Cross-Border Excellence</h3>
+                    <p>Unique expertise in navigating multiple regulatory environments simultaneously. We operate seamlessly across borders, cultures, and business environments.</p>
+                    <div class="difference-shape"></div>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business-First Approach</h3>
+                    <p>Technology serves business goals, not the other way around. We align every digital initiative with your strategic objectives and measurable outcomes.</p>
+                    <div class="difference-shape"></div>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Speed to Value</h3>
+                    <p>Our proven methodology reduces time-to-impact by 40% compared to traditional consultancies. We deliver tangible results within the first 90 days.</p>
+                    <div class="difference-shape"></div>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Executive Experience</h3>
+                    <p>Our consultants have held C-suite positions in Fortune 500 companies. We bring real-world leadership experience to every engagement.</p>
+                    <div class="difference-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We Create Measurable Business Impact</h2>
+                <p>Strategic solutions that deliver tangible results for your enterprise</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800" alt="Strategic Digital Transformation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Strategic Digital Transformation</h3>
+                        <p>We guide enterprises through comprehensive digital evolution, from legacy systems to future-proof architecture.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Comprehensive digital maturity assessment</li>
+                            <li><i class="fas fa-check-circle"></i> Technology roadmap development</li>
+                            <li><i class="fas fa-check-circle"></i> Organizational change management</li>
+                            <li><i class="fas fa-check-circle"></i> Digital capability building</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800" alt="API Commercialization">
+                    </div>
+                    <div class="service-content">
+                        <h3>API Commercialization & Governance</h3>
+                        <p>We help telecommunications and technology companies monetize their digital assets through strategic API commercialization.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> API portfolio assessment & strategy</li>
+                            <li><i class="fas fa-check-circle"></i> Monetization model development</li>
+                            <li><i class="fas fa-check-circle"></i> Cross-border regulatory compliance</li>
+                            <li><i class="fas fa-check-circle"></i> Developer ecosystem building</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1565547769401-d3549e67620e?w=800" alt="Market Entry Strategy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Market Entry Strategy</h3>
+                        <p>We lead market entry initiatives for digital businesses expanding into emerging markets across Asia and Europe.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Market analysis & opportunity assessment</li>
+                            <li><i class="fas fa-check-circle"></i> Regulatory navigation & compliance</li>
+                            <li><i class="fas fa-check-circle"></i> Strategic partnership development</li>
+                            <li><i class="fas fa-check-circle"></i> Localized go-to-market planning</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Proven Approach</h2>
+                <p>A structured methodology that ensures alignment between business objectives and technology implementation</p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">01</div>
+                        <h3>Discovery & Assessment</h3>
+                        <p>We conduct a comprehensive analysis of your current state, objectives, and challenges through stakeholder interviews, technology assessment, and process analysis to create a detailed transformation roadmap.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">02</div>
+                        <h3>Strategy & Roadmap</h3>
+                        <p>We develop a comprehensive transformation strategy including business case development, ROI model creation, resource planning, technology recommendations, and risk mitigation strategies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">03</div>
+                        <h3>Implementation</h3>
+                        <p>Using agile methodologies, we execute the transformation roadmap with cross-functional teams working in sprint cycles to ensure continuous alignment with stakeholders and regular progress reporting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">04</div>
+                        <h3>Optimization & Transfer</h3>
+                        <p>We ensure long-term success through performance monitoring, knowledge transfer, team training, and continuous process optimization to maximize the value of your digital transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies" style="padding: 120px 0; position: relative; background-color: white;">
+        <div class="container" style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2;">
+            <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px; position: relative; display: inline-block; color: #1A365D; font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.3;">Success Stories That Speak For Themselves</h2>
+                <p style="font-size: 1.1rem; color: #666666; max-width: 700px; margin: 20px auto 0;">Real results from real clients across industries and regions</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px;">
+                <!-- Telefonica Case Study -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; height: 100%;">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?w=800" alt="Telefonica API Commercialization" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 2; background-color: #14B5A0; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Telecommunications</div>
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #1A365D; font-family: 'Montserrat', sans-serif; font-weight: 700;">Telefonica Group: API Commercialization</h3>
+                        <p style="color: #666666; margin-bottom: 20px;"><strong>Challenge:</strong> Needed to commercialize telecom APIs across multiple European markets while ensuring regulatory compliance.</p>
+                        <p style="color: #666666; margin-bottom: 20px;"><strong>Solution:</strong> Spearheaded GSMA Open Gateway initiative across Spain and Germany, developed cross-border governance frameworks.</p>
+                        
+                        <div style="margin-top: 25px; padding: 20px; background-color: #F5F7FA; border-radius: 8px; position: relative;">
+                            <p style="font-style: italic; margin-bottom: 10px; color: #666666; font-size: 0.95rem; line-height: 1.6;">"Digital Tandem's expertise in cross-border API commercialization saved us at least 9 months of development time and helped us capture market share ahead of competitors."</p>
+                            <div style="text-align: right; font-weight: 600; color: #1A365D; font-size: 0.9rem;">— CTO, Telefonica Group</div>
+                        </div>
+                    </div>
+                    <div style="background: #1A365D; color: white; padding: 20px;">
+                        <h4 style="color: white; font-size: 1.1rem; margin-bottom: 15px; text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 600;">Impact Metrics</h4>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: #14B5A0; margin-bottom: 5px;">€22.5M</div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8);">New Annual Revenue</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: #14B5A0; margin-bottom: 5px;">62%</div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8);">Faster Time-to-Market</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kredivo Case Study -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; height: 100%;">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1559526324-c1f275fbfa32?w=800" alt="Kredivo Market Entry" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 2; background-color: #14B5A0; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Fintech</div>
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #1A365D; font-family: 'Montserrat', sans-serif; font-weight: 700;">Kredivo: Southeast Asia Market Entry</h3>
+                        <p style="color: #666666; margin-bottom: 20px;"><strong>Challenge:</strong> Southeast Asia's premier BNPL provider needed to establish operations in Thailand's competitive market.</p>
+                        <p style="color: #666666; margin-bottom: 20px;"><strong>Solution:</strong> Led comprehensive market entry strategy and execution, established strategic partnerships with TikTok Shop Thailand as exclusive BNPL provider.</p>
+                        
+                        <div style="margin-top: 25px; padding: 20px; background-color: #F5F7FA; border-radius: 8px; position: relative;">
+                            <p style="font-style: italic; margin-bottom: 10px; color: #666666; font-size: 0.95rem; line-height: 1.6;">"The team's deep understanding of local market dynamics and regulatory landscape was instrumental in our successful Thailand launch. They delivered a comprehensive strategy that balanced growth with risk management."</p>
+                            <div style="text-align: right; font-weight: 600; color: #1A365D; font-size: 0.9rem;">— Head of International Expansion, Kredivo Group</div>
+                        </div>
+                    </div>
+                    <div style="background: #1A365D; color: white; padding: 20px;">
+                        <h4 style="color: white; font-size: 1.1rem; margin-bottom: 15px; text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 600;">Impact Metrics</h4>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: #14B5A0; margin-bottom: 5px;">100k+</div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8);">Customers in Q1</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: #14B5A0; margin-bottom: 5px;">47%</div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8);">Lower CAC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GLS Case Study -->
+                <div style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; height: 100%;">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800" alt="GLS Digital Transformation" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div style="position: absolute; bottom: 20px; left: 20px; z-index: 2; background-color: #14B5A0; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Logistics</div>
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #1A365D; font-family: 'Montserrat', sans-serif; font-weight: 700;">GLS Group: Logistics Transformation</h3>
+                        <p style="color: #666666; margin-bottom: 20px;"><strong>Challenge:</strong> European logistics leader needed to modernize core systems handling millions of daily parcel shipments.</p>
+                        <p style="color: #666666; margin-bottom: 20px;"><strong>Solution:</strong> Led implementation of Camunda BPM solution, transformed core logistics system to microservice architecture.</p>
+                        
+                        <div style="margin-top: 25px; padding: 20px; background-color: #F5F7FA; border-radius: 8px; position: relative;">
+                            <p style="font-style: italic; margin-bottom: 10px; color: #666666; font-size: 0.95rem; line-height: 1.6;">"Digital Tandem didn't just modernize our systems – they transformed our entire approach to technology. Their business-first methodology ensured our technology investments directly supported our strategic objectives."</p>
+                            <div style="text-align: right; font-weight: 600; color: #1A365D; font-size: 0.9rem;">— CIO, GLS Group</div>
+                        </div>
+                    </div>
+                    <div style="background: #1A365D; color: white; padding: 20px;">
+                        <h4 style="color: white; font-size: 1.1rem; margin-bottom: 15px; text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 600;">Impact Metrics</h4>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: #14B5A0; margin-bottom: 5px;">€4.5M</div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8);">Annual Cost Savings</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: #14B5A0; margin-bottom: 5px;">30%</div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.8);">Capacity Increase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Strategic Technology Partners</h2>
+                <p>We leverage best-in-class technologies and strategic partnerships to deliver optimal solutions</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <img src="https://via.placeholder.com/150x80?text=AWS+Partner" alt="AWS Partner Network">
+                </div>
+                <div class="partner-item">
+                    <img src="https://via.placeholder.com/150x80?text=Microsoft+Partner" alt="Microsoft Gold Partner">
+                </div>
+                <div class="partner-item">
+                    <img src="https://via.placeholder.com/150x80?text=Salesforce+Partner" alt="Salesforce Partner">
+                </div>
+                <div class="partner-item">
+                    <img src="https://via.placeholder.com/150x80?text=GSMA" alt="GSMA Open Gateway">
+                </div>
+                <div class="partner-item">
+                    <img src="https://via.placeholder.com/150x80?text=Camunda" alt="Camunda Partner">
+                </div>
+                <div class="partner-item">
+                    <img src="https://via.placeholder.com/150x80?text=Google+Cloud" alt="Google Cloud Partner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Transform Your Enterprise?</h2>
+                    <p>Let's discuss how we can help you navigate your digital transformation journey with confidence and clarity.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>Email Us</h3>
+                                <p>contact@digitaltandem.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>Global Offices</h3>
+                                <p>Bangkok | Munich | Madrid</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <h3>Call Us</h3>
+                                <p>+66 93-919-5596</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Schedule Your Strategy Session</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company Name*</label>
+                                <input type="text" id="company" name="company" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <select id="industry" name="industry">
+                                    <option value="">Select your industry</option>
+                                    <option value="Telecommunications">Telecommunications</option>
+                                    <option value="Fintech">Fintech</option>
+                                    <option value="E-commerce">E-commerce</option>
+                                    <option value="Logistics">Logistics</option>
+                                    <option value="Retail">Retail</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="Under €50k">Under €50,000</option>
+                                    <option value="€50k-€100k">€50,000 - €100,000</option>
+                                    <option value="€100k-€250k">€100,000 - €250,000</option>
+                                    <option value="€250k-€500k">€250,000 - €500,000</option>
+                                    <option value="€500k+">€500,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your project*</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Schedule Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <h3>Digital Tandem</h3>
+                    <p>A premier digital transformation consultancy helping enterprises navigate complex digital landscapes across Europe and Asia.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Strategic Digital Transformation</a></li>
+                        <li><a href="#services">API Commercialization & Governance</a></li>
+                        <li><a href="#services">Market Entry Strategy</a></li>
+                        <li><a href="#services">Business Process Optimization</a></li>
+                        <li><a href="#services">Enterprise System Modernization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive the latest insights on digital transformation trends and best practices.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <p class="small">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Tandem Limited. All Rights Reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileToggle.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('#nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 10) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+        
+        // Active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#nav-menu a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would normally send the form data to your server
+            // For demonstration, we'll just show a success message
+            
+            const formData = new FormData(contactForm);
+            
+            // Display success message
+            contactForm.innerHTML = `
+                <div style="text-align: center; padding: 40px 20px;">
+                    <div style="font-size: 3rem; color: #14B5A0; margin-bottom: 20px;">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: #1A365D; font-size: 1.5rem;">Thank You!</h3>
+                    <p style="margin-bottom: 25px; color: #666;">Your message has been received. One of our consultants will contact you within 24 hours to schedule your strategy session.</p>
+                    <button type="button" class="btn" onclick="location.reload()">Send Another Message</button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
