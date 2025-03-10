@@ -720,188 +720,106 @@
             padding-bottom: 0;
         }
         
-        /* Case Studies Section */
-        .case-studies {
-            padding: 120px 0;
-            position: relative;
-            background-color: white;
-        }
-        
-        .case-studies-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .case-study-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            height: 100%;
-            position: relative;
-        }
-        
-        .case-study-card:hover {
-            transform: translateY(-15px);
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .case-study-img {
-            height: 240px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .case-study-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .case-study-card:hover .case-study-img img {
-            transform: scale(1.1);
-        }
-        
-        .case-study-img:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
-            z-index: 1;
-        }
-        
-        .case-study-logo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 2;
-            background-color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .case-study-logo img {
-            max-width: 40px;
-            max-height: 40px;
-        }
-        
-        .case-study-tag {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            z-index: 2;
-            background-color: var(--primary-light);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-        
-        .case-study-content {
-            padding: 30px;
-        }
-        
-        .case-study-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: var(--primary-dark);
-        }
-        
-        .case-study-content p {
-            color: var(--text-gray);
-            margin-bottom: 20px;
-        }
-        
-        .case-study-metrics {
-            position: absolute;
-            bottom: -100px;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(to top, rgba(26,54,93,0.95), rgba(26,54,93,0.8));
-            padding: 25px;
-            transition: bottom 0.4s ease;
-            z-index: 2;
-        }
-        
-        .case-study-card:hover .case-study-metrics {
-            bottom: 0;
-        }
-        
-        .case-study-metrics h4 {
-            color: white;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-        
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-        
-        .metric-item {
-            text-align: center;
-        }
-        
-        .metric-value {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-light);
-            margin-bottom: 5px;
-        }
-        
-        .metric-label {
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-        
-        .testimonial {
-            margin-top: 25px;
-            padding: 20px;
-            background-color: var(--secondary-light);
-            border-radius: 8px;
-            position: relative;
-        }
-        
-        .testimonial:before {
-            content: '\201C';
-            font-size: 3rem;
-            position: absolute;
-            top: -15px;
-            left: 10px;
-            color: var(--primary-light);
-            opacity: 0.3;
-            font-family: Georgia, serif;
-        }
-        
-        .testimonial p {
-            font-style: italic;
-            margin-bottom: 10px;
-            color: var(--text-gray);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        .testimonial-author {
-            text-align: right;
-            font-weight: 600;
-            color: var(--primary-dark);
-            font-size: 0.9rem;
-        }
-        
+        <!-- Case Studies Section -->
+<section class="case-studies" id="case-studies">
+    <div class="container">
+        <div class="section-header">
+            <h2>Success Stories That Speak For Themselves</h2>
+            <p>Real results from real clients across industries and regions</p>
+        </div>
+        <div class="case-studies-grid">
+            <!-- Telefonica Case Study -->
+            <div class="case-study-card">
+                <div class="case-study-img">
+                    <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?w=800" alt="Telefonica API Commercialization">
+                    <div class="case-study-tag">Telecommunications</div>
+                </div>
+                <div class="case-study-content">
+                    <h3>Telefonica Group: API Commercialization</h3>
+                    <p><strong>Challenge:</strong> Needed to commercialize telecom APIs across multiple European markets while ensuring regulatory compliance.</p>
+                    <p><strong>Solution:</strong> Spearheaded GSMA Open Gateway initiative across Spain and Germany, developed cross-border governance frameworks.</p>
+                    <div class="testimonial">
+                        <p>"Digital Tandem's expertise in cross-border API commercialization saved us at least 9 months of development time and helped us capture market share ahead of competitors."</p>
+                        <div class="testimonial-author">— CTO, Telefonica Group</div>
+                    </div>
+                </div>
+                <div class="impact-metrics">
+                    <h4>Impact Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">€22.5M</div>
+                            <div class="metric-label">New Annual Revenue</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">62%</div>
+                            <div class="metric-label">Faster Time-to-Market</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kredivo Case Study -->
+            <div class="case-study-card">
+                <div class="case-study-img">
+                    <img src="https://images.unsplash.com/photo-1559526324-c1f275fbfa32?w=800" alt="Kredivo Market Entry">
+                    <div class="case-study-tag">Fintech</div>
+                </div>
+                <div class="case-study-content">
+                    <h3>Kredivo: Southeast Asia Market Entry</h3>
+                    <p><strong>Challenge:</strong> Southeast Asia's premier BNPL provider needed to establish operations in Thailand's competitive market.</p>
+                    <p><strong>Solution:</strong> Led comprehensive market entry strategy and execution, established strategic partnerships with TikTok Shop Thailand as exclusive BNPL provider.</p>
+                    <div class="testimonial">
+                        <p>"The team's deep understanding of local market dynamics and regulatory landscape was instrumental in our successful Thailand launch. They delivered a comprehensive strategy that balanced growth with risk management."</p>
+                        <div class="testimonial-author">— Head of International Expansion, Kredivo Group</div>
+                    </div>
+                </div>
+                <div class="impact-metrics">
+                    <h4>Impact Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">100k+</div>
+                            <div class="metric-label">Customers in Q1</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">47%</div>
+                            <div class="metric-label">Lower CAC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GLS Case Study -->
+            <div class="case-study-card">
+                <div class="case-study-img">
+                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800" alt="GLS Digital Transformation">
+                    <div class="case-study-tag">Logistics</div>
+                </div>
+                <div class="case-study-content">
+                    <h3>GLS Group: Logistics Transformation</h3>
+                    <p><strong>Challenge:</strong> European logistics leader needed to modernize core systems handling millions of daily parcel shipments.</p>
+                    <p><strong>Solution:</strong> Led implementation of Camunda BPM solution, transformed core logistics system to microservice architecture.</p>
+                    <div class="testimonial">
+                        <p>"Digital Tandem didn't just modernize our systems – they transformed our entire approach to technology. Their business-first methodology ensured our technology investments directly supported our strategic objectives."</p>
+                        <div class="testimonial-author">— CIO, GLS Group</div>
+                    </div>
+                </div>
+                <div class="impact-metrics">
+                    <h4>Impact Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">€4.5M</div>
+                            <div class="metric-label">Annual Cost Savings</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">30%</div>
+                            <div class="metric-label">Capacity Increase</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         /* Partners Section */
         .partners {
             padding: 100px 0;
